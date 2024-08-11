@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="describing project overview">
+        <title>Space-Travel Web App</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="assets/astronaut_825012.png" />
+    </head>
+    <body>
+        <img src="assets/astronaut_825012.png" alt="LOGO" class="image">
+        <div class="container">
+            <h1>Engineer Space Trip Registration</h1>
+
+        <form id="Registration-form">
+            <label>Full Name:</label>
+            <input type="text" id="name" class="name" name="name" placeholder="Enter Your Name"  required />
+
+            <label>Email:</label>
+            <input type="email" id="email" class="email" name="email" placeholder="Enter Your Email">
+
+
+            <label class="labels">Nationality:</label>
+            <select name="" id="nation">
+                <option value="" disabled selected>Select Your Specialization</option>
+                <option value="USA">USA</option>
+                <option value="EGY">EGY</option>
+                <option value="UAE">UAE</option>
+                <option value="UK">UK</option>
+            </select>
+
+
+            <label class="labels">Experience LvL:</label>
+            <div class="radio-group">
+                <label for="">Junior</label>
+                <input type="radio" id="Junior" name="Experience" value="Junior">
+
+                <label for="">Mid</label>
+                <input type="radio" id="Mid" name="Experience" value="Mid">
+            
+                <label for="">Senior</label>
+                <input type="radio" id="Senior" name="Experience" value="Senior">
+
+            </div>
+            <label for="">Why do you want to explore space?</label>
+
+            <textarea name="motivational-q" id="motivational-q" rows="10" cols="50" placeholder="Please Answer The Question"></textarea>
+
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I consent to having my data stored for this project</label>
+            </div>
+            <br>
+
+            <button type="submit" value="save" onclick="save_func()">Submit Registration</button>
+
+
+        </form>
+            
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
